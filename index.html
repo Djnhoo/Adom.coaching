@@ -332,7 +332,12 @@ footer{background:#f7f7f5;border-top:1px solid var(--border);padding:44px 60px;d
 <div class="sticky-bar"><button onclick="openModal()">Prenota una consulenza &rarr;</button></div>
 <div class="modal-overlay" id="contactModal" role="dialog" aria-modal="true">
   <div class="modal-box">
-    <button class="modal-close" onclick="closeModal()">&#10005;</button>
+<form action="https://formspree.io/f/xgojpean" method="POST">
+  <input type="email" name="email" placeholder="La tua email" required>
+  <textarea name="messaggio" placeholder="Il tuo messaggio" required></textarea>
+  <button type="submit">Invia</button>
+
+</form>
     <div id="formContent">
       <div class="modal-eyebrow">Coaching 1:1 &middot; Padova &amp; Online</div>
       <h2 class="modal-title">Cominciamo insieme.</h2>
